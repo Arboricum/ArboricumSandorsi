@@ -1,0 +1,145 @@
+.body1 {
+  background-image: url("Sfondo_land2.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.body2 {
+  background-image: url("sfondo_main.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.body3 {
+background-image: url("sfondo_mus2.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.body4 {
+background-image: url("sfondo_libri3.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.body5 {
+background-image: url("sfondo_cont.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.body6 {
+background-image: url("sfondo_arbo.jpg");
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.anBody {
+animation-name: due;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;	
+}
+.anBody2 {
+animation-name: dueb;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;	
+}
+.anBody3 {
+animation-name: duec;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;	
+}
+.anBody4 {
+animation-name: dued;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;	
+}
+.anBody5 {
+animation-name: duee;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;	
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+@keyframes uno {
+  from {opacity: 0.0;}
+  to {opacity: 0.6;}
+}
+@keyframes due {
+from {background-image: url("Sfondo_land2.jpg");}
+to {background-image: url("sfondo_main.jpg");}
+}
+@keyframes dueb {
+from {background-image: url("sfondo_main.jpg");}
+to {background-image: url("sfondo_mus2.jpg");}
+}
+@keyframes duec {
+from {background-image: url("sfondo_main.jpg");}
+to {background-image: url("sfondo_libri3.jpg");}
+}
+@keyframes dued {
+from {background-image: url("sfondo_main.jpg");}
+to {background-image: url("sfondo_cont.jpg");}
+}
+@keyframes duee {
+from {background-image: url("sfondo_main.jpg");}
+to {background-image: url("sfondo_arbo.jpg");}
+}
+.buttonIni {
+border: 1px solid transparent;
+opacity: 0.0;
+width: 100px;
+height: 50px;
+position: absolute;
+padding-top: 0px;
+    padding-right: 1px;
+    padding-bottom: 15px;
+    padding-left: 12px;
+text-align: center;
+border-radius: 10px;
+animation-name: uno;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.buttonIni:hover {
+border: 2px solid black;
+cursor: pointer;
+font-weight: bold;
+box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+background-color: lightgreen;
+color: red;
+}
+.btn1 {
+top: 200px;
+left: 50%;
+-ms-transform: translate(-102px,0px);
+transform: translate(-102px,0px);
+}
+.btn2 {
+top: 200px;
+left: 50%;
+-ms-transform: translate(2px,0px);
+transform: translate(2px,0px);
+}
+.imgBtn {
+-ms-transform: translate(1px,10px);
+transform: translate(1px,10px);
+width: 30px;
+height: 30px;
+align: right;
+}
+
+#main {
+display: none;
+height: 100%;
+}
+
+
+

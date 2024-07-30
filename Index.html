@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+ <meta charset="utf-8">
+ <meta name="viewport"; content="width=device-width, initial-scale=1";>
+ <meta name="description" content="Musica, suonerie, libri">
+ <meta name="author" content="Arboricum Sandorsi">
+ 
+ <meta property="og:title" content="Arboricum Sandorsi">
+ <meta property="og:description" content="Lavori artistici">
+ <meta property="og:image" content="Sfondo_land3.jpg">
+ <meta property="og:url" content="Sfondo_land3.jpg">
+ 
+ <title>Arboricum - Landing</title>
+ 
+ <link rel="stylesheet"; href="start.css";>
+ <link rel="stylesheet"; href="Css/main.css";>
+ <link rel="stylesheet"; href="Css/sonetti.css";>
+ 
+ <link rel="icon" href="favicon.ico" type="image/x-icon" /> 
+ <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+ <link rel="apple-touch-icon" sizes="120x120" href="icon120.png"/> 
+ <link rel="apple-touch-icon" sizes="152x152" href="icon152.png"/>
+ 
+ <script src="Js/startTest.js";></script>
+ <script src="Js/contatti.js";></script>
+ <script src="Js/piano.js";></script>
+ <script src="Js/libro.js";></script>
+ <script src="Js/sonetti.js";></script>
+ <script src="Js/musicaYT.js";></script>
+ <script src="Js/arbo.js";></script>
+ <script src="Js/radio.js";></script>
+ <script type="module" src="Js/suonerieData.js"></script>
+ <script type="module" src="Js/cellPageTest.js";></script>
+ 
+ <style>
+ </style>
+ 
+</head>
+<body onload = 'startPage()'; class = 'body1';>
+
+
+<div id = 'main';>
+  
+  <div class = 'logoDiv';>
+  <button type="button" class = 'audioBtn'></button>
+  <img src = 'logo.png'; alt = 'logo'; class = 'logo'>
+  </div>
+  
+  <div class = 'altMenuDiv';>
+  <img src = 'casa1.png'; class = 'imgMenuAlt'; alt = 'casa';>
+  <img src = 'piano.png'; class = 'imgMenuAlt'; alt = 'piano';>
+  <img src = 'libro.png'; class = 'imgMenuAlt'; alt = 'libro';>
+  <img src = 'contatti.png'; class = 'imgMenuAlt'; alt = 'contatti';>
+  <img src = 'arbo.png'; class = 'imgMenuAlt'; alt = 'arboricum';>
+  </div>
+  
+  <div class = 'mainDiv';>
+  <img src = 'piano.png'; class = 'imgMenu1'; alt = 'piano';>
+  <img src = 'libro.png'; class = 'imgMenu1'; alt = 'libro';>
+  <img src = 'contatti.png'; class = 'imgMenu1'; alt = 'contatti';>
+  <img src = 'arbo.png'; class = 'imgMenu1'; alt = 'arboricum';>
+  </div>
+  
+  <div class = 'pianoDiv';>
+  <img src = 'radio.png'; class = 'imgMenu musSubMenu'; alt = 'radio';>
+  <img src = 'tv2.png'; class = 'imgMenu musSubMenu'; alt = 'tv'; id = 'test'>
+  <img src = 'spartiti.png'; class = 'imgMenu musSubMenu'; alt = 'tv';>
+  <img src = 'cell.png'; class = 'imgMenu musSubMenu'; alt = 'tv';>
+    
+	<div class = 'radioDiv';>
+	 <h2 id = 'top1'><i>Musica su SoundCloud</i></h2>
+	 <p>Tutti la mia musica in formato audio</p>
+	 <p>Siediti, rilassati e... buon ascolto!</p>
+	 <div id = 'mainRadio';></div>
+	 <h4><a href="#top1" style="color:red;" onclick="radio1()">Relaxing music for stress relief Vol.3</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio2()">Relaxing music for stress relief Vol.2</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio3()">Relaxing music for stress relief Vol.1</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio4()">Invenzioni a 3 voci di J.S.Bach trascritte per synth1</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio5()">Electronic tangos</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio6()">Mornful time</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio7()">Meditation music</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio8()">Dancing with my soul</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio9()">Parallel universes</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio10()">Music fragments from parallel worlds</a></h4>
+	 <h4><a href="#top1" style="color:red;" onclick="radio11()">Singles</a></h4>
+	 
+	</div>
+	<div class = 'tvDiv';>
+	 <h2 id = 'top' class='tvCentra'><i>Musica su YouTube</i></h2>
+	 <br>
+	 <div id="mainTv" class='tvCentra'></div>
+	 <br>
+	 
+	  
+	  <h3 class='tvCentra'><b>Elenco delle playlist su You Tube con tutta la mia musica</b></h3>
+	  <br>
+	  <h4><a href="#top" style="color:red;" onclick="pl1()">Dancing with my soul</a></h4>
+	  <p>14 tracce di musica dance secondo i criteri del tutto personali del Sandorsi, fra cui diversi brani in ritmi composti e talvolta bizzarri 
+	  (tipo il 5/4 o l'alternanza tra questo, il 7/4, il 4/4 e il 3/4)</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl8()">Music fragments from parallel worlds</a></h4>
+	  <p>raccolta di brani di musica futuristica più che contemporanea: 
+	  numerosi strumenti insoliti, le infinite possibilità del computer e 
+	  un approccio creativo alla ricerca di nuovi orizzonti sonori</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl2()">Meditation music</a></h4>
+	  <p>musica composta per sintetizzatore dalle sonorità meditative e fantasiose e bizzarre armonie di contorno</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl3()">Meditation music 2 - Big Bang's sounds of other universes</a></h4>
+	  <p>partendo dal ricostruito suono del Big Bang del nostro universo, ho immaginato come avrebbe potuto suonare il Big Bang di alcuni universi paralleli</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl4()">Meditazioni musicali - Improvvisazioni polistrumentali</a></h4>
+	  <p>improvvisazioni polistrumentali eseguite con i vari e spesso bizzarri strumenti della mia numerosa collezione</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl5()">Ninna nanne per carillon</a></h4>
+	  <p>piccole ninna nanne per carillon dedicate ai miei adorati figli, Leonardo e Sebastiano</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl6()">J.S.Bach - Invenzioni a 3 voci BWV 787-801 trascritte per Synth</a></h4>
+	  <p>le Invenzioni a 3 voci, o Sinfonie, di J.S.Bach trascritte e arrangiate per synth, tramite l'uso di Sibelius prima e Fruity Loops poi, dall'Arboricum Sandorsi, ovvero il buon Yari Piras</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl7()">Messa per coro a 4 voci a cappella (SATB) "per Emma"</a></h4>
+	  <p>scritta in occasione del matrimonio della cugina Emma, la Messa ha l'ambizione di fondere il modo di scrivere la liturgia cantata tra '500 e '600 con armonie e tecniche contrappuntistiche di stampo Bachiano e con il testo in italiano, che penso essere cosa piuttosto rara nella messa in musica di un'intera messa.
+      Strutturata secondo lo schema canonico Kyrie-Gloria-Credo-Sanctus-Agnus Dei-Missa Est, include una fuga per Gloria e Credo e un vero e proprio corale per il Missa Est con accompagnamento di organo, con testo nella versione solo spartito.</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl9()">Spartiti musicali dell'Arboricum</a></h4>
+	  <p>spartiti tradotti in video e audio, alcuni presenti su scoreexchange altri no, per i più svariati complessi strumentali</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl10()">Arboricum Sandorsi's Tangos</a></h4>
+	  <p>5 tanghi elettronici</p>
+	  <h4><a href="#top" style="color:red;" onclick="pl11()">Ifigonia in Culide - Opera lirica - Spartito</a></h4>
+	  <p>Lo spartito integrale qui: http://www.scoreexchange.com/scores/190115.html<br>
+      Ifigonia in Culide (o Apogeo del Bunga-bunga) - Opera lirica in un atto posta in musica dall'Arboricum Sandorsi nel 2016<br>
+      I. Ouverture 00:00<br>
+      II. Aria del Gran Cerimoniere, coro del popolo 04:37<br>
+      III. Recitativo (arioso) del Re 08:18<br>
+      IV. Recitativo del Gran Cerimoniere 11:28<br>
+      V. Coro delle Vergini ed Ifigonia 12:41<br>
+      VI. Recitativo ed aria di Ifigonia 14:27<br>
+      VII. Recitativo e aria di Ifigonia, coro delle Vergini e del Popolo 17:18<br>
+      VIII. Recitativo (arioso) del Re e della Regina, coro del Popolo 19:29<br>
+      IX. Aria di Ifigonia, coro delle Vergini e del Popolo 23:51<br>
+      X. Recitativo del Re e del Gran Cerimoniere 26:14<br>
+      XI. Entrata del Gran Sacerdote. Recitativo del Gran Sacerdote e (arioso) del Re. Raccoglimento del Gran Sacerdote prima della sua litania (aria) 27:06<br>
+      XII. Aria del Gran Sacerdote 31:10<br>
+      XIII. Recitativo-terzetto (arioso) di Re, Regina, Ifigonia 34:48<br>
+      XIV. Recitativo di Ifigonia e del Re. Coro del Popolo 36:41<br>
+      XV. Recitativo del Re e del Gran Sacerdote 38:19<br>
+      XVI. Cabaletta di Ifigonia 40:55<br>
+      XVII. Coro finale e chiusura del Gran Sacerdote 42:49<br>
+	  Ifigonia in Culide (o Apogeo del Bunga-bunga) - Opera lirica in un atto posta in musica dall'Arboricum Sandorsi nel 2016<br>
+      Libretto di Yari Piras tratto dalla tragedia in 3 atti omonima ed anonima ma da molti attribuita a Gabriele D'Annunzio ma più probabilmente di Lorenzo Stecchetti, comunque un vero e proprio classico della tradizione goliardica italiana</p>
+	  <br>
+	  <br>
+	  <br>
+	  
+	  
+	</div>
+	
+	<div class = 'spartitiDiv';>
+	<h2 id = 'top2'><i>Musica su ScoreExchange</i></h2>
+	<iframe width='560' height=315' src='https://www.scoreexchange.com/'></iframe>
+	<br>
+	<br>
+	<br>
+	</div>
+	
+	<div class = 'cellDiv';>
+	</div>
+
+	</div>
+	
+
+  
+  <div class = 'libroDiv';>
+   
+   <section>
+    <aside class = 'libroAs titoli';>
+     <h2>Paralipomeni</h2>
+     <img src = 'copertina.jpg' alt = 'Paralipomeni' width = '100px' height = '150px'><br>
+	 <a href = 'https://ilmiolibro.kataweb.it/book_data/interno/1310846/' target = '_blank'>Anteprima</a><br>
+	 <a href = 'https://ilmiolibro.kataweb.it/libro/narrativa/630826/paralipomeni-2/' target = '_blank'>Acquista</a>
+    </aside>
+    <article class = 'libroAr titoli';>
+     <p>Un libro con una trama esilissima e difficile da comprendere, quattro storie principali che si richiamano vagamente una con l'altra immerse in un mondo apparentemente privo di qualunque senso.
+     Emergono infinite domande alle quali non viene data alcuna risposta.
+     Ottanta splendide immagini di Piero Brunetto Passacantando completano un universo privo di riferimenti e di orizzonti.</p>
+     </article>	 
+    </section>
+	
+	<div class = 'libroSep';></div>
+   
+   <section>
+    <aside class = 'libroAs titoli';>
+     <h2>Poesie Brutte</h2>
+     <img src = 'copertina2.jpg' alt = 'Poesie' width = '100px' height = '150px'><br>
+	 <a href = 'https://ilmiolibro.kataweb.it/book_data/interno/815457/' target = '_blank'>Anteprima</a><br>
+	 <a href = 'https://ilmiolibro.kataweb.it/libro/poesia/76824/poesie-brutte/' target = '_blank'>Acquista</a>
+    </aside>
+	<article class = 'libroAr titoli'>
+	 <p>Poesie Brutte perché estreme, spesso scarne e disadorne ed altre volte piene e pompose,
+	 si autopongono ai margini del mondo e lo guardano con animo distaccato, critico, sarcastico
+	 e in parte altero. Poesie Brutte perché non interessa tanto la bellezza quanto piuttosto
+	 la parola, il messaggio, un messaggio non sempre tarato per i soli cinque sensi. 
+	 Poesie Brutte nonostante le innumerevoli cure, di forma e sostanza, ed anzi forse proprio 
+	 a causa di esse. Trattasi di raccolta all'antica: 135 componimenti tra forme libere e 
+	 liberissime ma anche sonetti e sestine liriche alla ricerca di una nuova comunicazione poetica
+	 con un'occhio di riguardo per l'esperienza del passato. Con molta autoironia, un po' di 
+	 sana tecnica buttata come olio in un ingranaggio ormai troppo arrugginito per non 
+	 stridere comunque e anche, già che ci si era, un filo di impegno civile come uovo di 
+	 Colombo; insomma, una bella maionesata di roba. La seconda edizione rispetto alla prima 
+	 ha una lirica in più (Un parchetto), un ordine diverso, ed è arricchita da 19 splendide 
+	 illustrazioni del carissimo amico Piero Brunetto Passacantando che riflettono in maniera
+	 mirabile lo spirito del libro.</p>
+	</article>
+   </section>
+   
+   <div class = 'libroSep';></div>
+   
+   <section>
+    <aside class = 'libroAs titoli';>
+	 <h2> 38.416 sonetti</h2>
+     <img src = 'copertina3.jpg' alt = 'Poesie' width = '100px' height = '150px'>
+    </aside>
+	<article class = 'libroAr titoli'>
+     <h3><i>Interattivo! </i></h3>
+     <p>Trova il tuo sonetto preferito, scegliendo fra le 14 possibilità per ogni strofa.
+	 <br>Clicca <i onclick = 'hideTit()'; class = 'libroLink'>QUI</i></p>
+    </article>
+   </section>
+   
+   <div class = 'libroSep';></div>
+   <br>
+   <br>
+   <br>
+	
+	<div id = 'para';>
+	</div>
+	
+	<div id = 'poes';>
+	</div>
+	
+	<div id = 'sone';>
+	 <div id ='soneM1';>
+	 <h4><b id="ttl">Se proprio non si sa dove sostare<br>
+     si prega di non prendersela a male<br>
+     ché basta avere un po’ di zucca in sale<br>
+     per smettere l’invano ricercare.</b></h4>
+	 </div>
+	 <div id = 'soneC1'>
+	 <a onclick="gal1()" style="color:blue;cursor:pointer"><b>1</b></a>
+     <a onclick="gal2()" style="color:blue;cursor:pointer"><b>2</b></a>
+     <a onclick="gal3()" style="color:blue;cursor:pointer"><b>3</b></a>
+     <a onclick="gal4()" style="color:blue;cursor:pointer"><b>4</b></a>
+     <a onclick="gal5()" style="color:blue;cursor:pointer"><b>5</b></a><br>
+     <a onclick="gal6()" style="color:blue;cursor:pointer"><b>6</b></a>
+     <a onclick="gal7()" style="color:blue;cursor:pointer"><b>7</b></a>
+     <a onclick="gal8()" style="color:blue;cursor:pointer"><b>8</b></a>
+     <a onclick="gal9()" style="color:blue;cursor:pointer"><b>9</b></a>
+     <a onclick="gal10()" style="color:blue;cursor:pointer"><b>10</b></a><br>
+     <a onclick="gal11()" style="color:blue;cursor:pointer"><b>11</b></a>
+     <a onclick="gal12()" style="color:blue;cursor:pointer"><b>12</b></a>
+     <a onclick="gal13()" style="color:blue;cursor:pointer"><b>13</b></a>
+     <a onclick="gal14()" style="color:blue;cursor:pointer"><b>14</b></a>
+     </div>
+	 <div id ='soneM2';>
+	 <h4><b id="tt2">Con questo movimento circolare<br>
+     discende tutto ciò che a un tempo sale<br>
+     perché per lucidare ancor l’opale<br>
+     bisogna assai con lena lavorare.</b></h4>
+	 </div>
+	 <div id = 'soneC2'>
+	 <a onclick="gal1b()" style="color:blue;cursor:pointer"><b>1</b></a>
+     <a onclick="gal2b()" style="color:blue;cursor:pointer"><b>2</b></a>
+     <a onclick="gal3b()" style="color:blue;cursor:pointer"><b>3</b></a>
+     <a onclick="gal4b()" style="color:blue;cursor:pointer"><b>4</b></a>
+     <a onclick="gal5b()" style="color:blue;cursor:pointer"><b>5</b></a><br>
+     <a onclick="gal6b()" style="color:blue;cursor:pointer"><b>6</b></a>
+     <a onclick="gal7b()" style="color:blue;cursor:pointer"><b>7</b></a>
+     <a onclick="gal8b()" style="color:blue;cursor:pointer"><b>8</b></a>
+     <a onclick="gal9b()" style="color:blue;cursor:pointer"><b>9</b></a>
+     <a onclick="gal10b()" style="color:blue;cursor:pointer"><b>10</b></a><br>
+     <a onclick="gal11b()" style="color:blue;cursor:pointer"><b>11</b></a>
+     <a onclick="gal12b()" style="color:blue;cursor:pointer"><b>12</b></a>
+     <a onclick="gal13b()" style="color:blue;cursor:pointer"><b>13</b></a>
+     <a onclick="gal14b()" style="color:blue;cursor:pointer"><b>14</b></a>
+	 </div>
+	 <div id ='soneM3';>
+	 <h4>
+     <b id="tt3">Or che la storia ci naviga intorno<br>
+     ed or che non ci punge la zanzara<br>
+     si metteranno le patate in forno.</b>
+     </h4>
+	 </div>
+	 <div id = 'soneC3'>
+	 <a onclick="gal1c()" style="color:blue;cursor:pointer"><b>1</b></a>
+     <a onclick="gal2c()" style="color:blue;cursor:pointer"><b>2</b></a>
+     <a onclick="gal3c()" style="color:blue;cursor:pointer"><b>3</b></a>
+     <a onclick="gal4c()" style="color:blue;cursor:pointer"><b>4</b></a>
+     <a onclick="gal5c()" style="color:blue;cursor:pointer"><b>5</b></a><br>
+     <a onclick="gal6c()" style="color:blue;cursor:pointer"><b>6</b></a>
+     <a onclick="gal7c()" style="color:blue;cursor:pointer"><b>7</b></a>
+     <a onclick="gal8c()" style="color:blue;cursor:pointer"><b>8</b></a>
+     <a onclick="gal9c()" style="color:blue;cursor:pointer"><b>9</b></a>
+     <a onclick="gal10c()" style="color:blue;cursor:pointer"><b>10</b></a><br>
+     <a onclick="gal11c()" style="color:blue;cursor:pointer"><b>11</b></a>
+     <a onclick="gal12c()" style="color:blue;cursor:pointer"><b>12</b></a>
+     <a onclick="gal13c()" style="color:blue;cursor:pointer"><b>13</b></a>
+     <a onclick="gal14c()" style="color:blue;cursor:pointer"><b>14</b></a>
+	 </div>
+	 <div id ='soneM4';>
+     <h4>
+     <b id="tt4">Adesso che la vita costa cara,<br>
+     che l’uomo serve solo da contorno,<br>
+     non trovo la sorpresa tanto amara.</b></h4>	
+	 </div>
+	 <div id = 'soneC4'>
+	 <a onclick="gal1d()" style="color:blue;cursor:pointer"><b>1</b></a>
+     <a onclick="gal2d()" style="color:blue;cursor:pointer"><b>2</b></a>
+     <a onclick="gal3d()" style="color:blue;cursor:pointer"><b>3</b></a>
+     <a onclick="gal4d()" style="color:blue;cursor:pointer"><b>4</b></a>
+     <a onclick="gal5d()" style="color:blue;cursor:pointer"><b>5</b></a><br>
+     <a onclick="gal6d()" style="color:blue;cursor:pointer"><b>6</b></a>
+     <a onclick="gal7d()" style="color:blue;cursor:pointer"><b>7</b></a>
+     <a onclick="gal8d()" style="color:blue;cursor:pointer"><b>8</b></a>
+     <a onclick="gal9d()" style="color:blue;cursor:pointer"><b>9</b></a>
+     <a onclick="gal10d()" style="color:blue;cursor:pointer"><b>10</b></a><br>
+     <a onclick="gal11d()" style="color:blue;cursor:pointer"><b>11</b></a>
+     <a onclick="gal12d()" style="color:blue;cursor:pointer"><b>12</b></a>
+     <a onclick="gal13d()" style="color:blue;cursor:pointer"><b>13</b></a>
+     <a onclick="gal14d()" style="color:blue;cursor:pointer"><b>14</b></a>
+	 </div>
+	 <br>
+	 <br>
+	 <br>
+	</div>
+	
+  </div>
+  
+  <div class = 'arboDiv';>
+  <h2><i>Arboricum Sandorsi</i></h2>
+  <p>Ho studiato composizione sperimentale presso il conservatorio di Novara prima e quello di Milano poi; 
+  mi sono laureato in Lettere moderne, indirizzo Storia della musica con una tesi dal titolo 
+  "Storia degli strumenti musicali elettronici nella musica colta occidentale dal 1876 agli anni '80 del '900" presso l'Università Statale di Milano...
+  In questi anni sono state eseguite numerose mie opere per i più svariati ensamble strumentali, 
+  alcune delle quali sono disponibili on-line nel sito scoreexchange (vd contatti) o su You Tube..
+  La composizione sperimentale studiata al conservatorio mi ha portato a sperimentare varie forme compositive 
+  e a scoprire il mondo dell'elettronica, quindi all'uso di software quali Cubase, Samplitude, Fruity Loop (e molti altri).
+  Sempre per esigenze compositive, ho acquisito competenze professionali nell'uso del software di scrittura musicale Sibelius, 
+  con oltre 16 anni di esperienza alle spalle e l'uso di tutte le versioni dalla 3 in poi.
+  Ho studiato violino, chitarra, pianoforte, flauto dolce, fisarmonica e da lì il salto al polistrumentismo è stato breve.</p>
+  </div>
+  
+  <div class = 'contDiv';>
+  <p><b>Email: sandorsi@arboricum.it<br>
+  Email: arboricum@yaripiras.it<br>
+  <a href='http://www.facebook.com/ASandorsi' target = '_blank';>Profilo su Facebook</a><br>
+  <a href='http://www.scoreexchange.com/profiles/50403' target = '_blank';>Score Exchange (spartiti di Y.Piras)</a><br>
+  <a href='https://www.safecreative.org/user/Arboricum+Sandorsi' target = '_blank';>Profilo su SafeCreative</a><br>
+  <a href='https://soundcloud.com/arboricum-sandorsi' target = '_blank';>Profilo su SoundCloud</a><br>
+  <a href='https://www.youtube.com/ArboricumSandorsi' target = '_blank';>Profilo su YouTube</a><br>
+  <a href='https://www.yaripiras.it/' target = '_blank'>Il mio primo sito</a>
+  </b></p>
+  <br>
+  <br>
+  </div>
+  
+
+  
+</div>
+
+<audio>
+  <source src="Fragment_21.mp3" content-type="audio/mpeg">
+</audio>
+
+</body>
+
+<script>
+//imposta l'altezza del main in base allo schermo
+/*var altezza = window.innerHeight;
+function setAltezza() {
+document.getElementById('main').style.height = (altezza-40) + 'px';
+console.log(altezza);
+}*/
+var aud1 = document.getElementsByTagName('audio')[0];
+var mainDivVar = document.getElementsByClassName('mainDiv');
+var pianoDiv = document.getElementsByClassName('pianoDiv');
+var contDiv = document.getElementsByClassName('contDiv');
+var libroDiv = document.getElementsByClassName('libroDiv');
+var arboDiv = document.getElementsByClassName('arboDiv');
+var altMenuDiv = document.getElementsByClassName('altMenuDiv');
+var tit = document.getElementsByClassName('titoli');
+var musSub = document.getElementsByClassName('musSubMenu');
+var imgAlt = document.getElementsByClassName('imgMenuAlt');
+var audioBtn = document.getElementsByClassName('audioBtn')[0];
+var radioList = document.getElementById('mainRadio');
+var extM = document.getElementsByClassName('titMain');
+var suonerie = document.getElementsByClassName('suon2');
+var imgPlay = document.getElementsByClassName('imgPlay');
+var libroSep = document.getElementsByClassName('libroSep');
+
+
+</script>
+
+</html>
